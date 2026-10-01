@@ -47,6 +47,8 @@
                             Quantity&nbsp; <input type="number" id="qty" min="1" style="width: 70px;" value="1" placeholder="Quantity">
                         </div>
                     </td>
+                
+                   
                 </tr>
             </tbody>
         </table>
@@ -89,7 +91,9 @@
                     let textValues = Array.from(textInputs).map(input => input.value || input.defaultValue).join(', ');
                     message += `- ${chk.value}: ${textValues}\n`;
                 }
+                
             });
+       
             document.getElementById('outputMessage').value = message;
 
             var text1 = document.getElementById("outputMessage").value;
@@ -107,12 +111,13 @@
 
             // Updates the second textarea in real-time as you type in the first
            // source.addEventListener('input', () => {
-           //    destination1.value = sourceValue
+           //    destination1.value = sourceValue;
+           //   });
+        
+         }   
     </script>
 
-    My food order project
-    <br>
-    <br>
-    <a
+
+    
 </body>
 </html>
